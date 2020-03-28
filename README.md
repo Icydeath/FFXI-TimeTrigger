@@ -6,8 +6,8 @@ FFXI Windower Addon - Create triggers to run commands at a specific Vana'diel ti
 ```
 Installation:
   1. Create a new folder called 'TimeTrigger' in the [../windower/addons], move all the downloaded files to your new folder. 
-       You should end up with the following: [../windower/addons/TimeTrigger] with the addons folders and files within it: GUI,graphics,sounds,README.md, TimeTrigger.lua
-  2. Select the 'GUI' folder in [../windower/addons/TimeTrigger] and {CTRL + X} to cut it.
+       You should end up with the following: [../windower/addons/TimeTrigger] with the addons folders and files within it: GUI,graphics,sounds,README.md,GUI.lua,TimeTrigger.lua
+  2. In [../windower/addons/TimeTrigger], while hold CTRL, Click the 'GUI' folder AND 'GUI.lua' file and {CTRL + X} to cut.
   3. Navigate to the [../windower/addons/libs] folder and {CTRL + V} to paste it.
        You should end up with the following: [../windower/addons/libs/GUI]
 ```
