@@ -141,7 +141,6 @@ windower.register_event('addon command', function(...)
 			settings.triggers:clear()
 			enabled = false
 		else
-			-- if settings.triggers[commands[2]] then settings.triggers[commands[2]] = nil else print_command_help('remove', 'Could not find trigger: '..commands[2]) return end
 			local removed = false
 			for t in pairs(settings.triggers) do
 				if t:lower() == commands[2]:lower() then 
@@ -369,7 +368,7 @@ function create_trigger_button(trig_name, trig)
 		
 	gui_items:insert({
 		name = trig_name,
-		label =  PassiveText({
+		label = PassiveText({
 				x = label_x,
 				y = label_y,
 				font_size = settings.trigger_font_size,
@@ -385,6 +384,7 @@ function create_trigger_button(trig_name, trig)
 end
 
 windower.register_event('load', function()
+	log('To change the position use: //tt pos <x> <y>  - ie: //tt pos 1000 800  - note: x at 0 is far left, y at 0 is the very top.')
 	build_gui()
 end)
 
